@@ -3,7 +3,7 @@ body {
 }
 
 .title {
-    width: 30%;
+    width: 100%;
     background-color: green;
     font-size: 55px;
     height: 54px;
@@ -13,17 +13,18 @@ body {
 }
 
 .instructions {
-    width: 40%;
+    width: 22%;
     background-color: lightyellow;
     height: 40%;
     font-size: 26px;
     padding: 20px;
     color: blue;
-    margin-top: 30px;
+    margin: 30px;
+    float: left;
 }
 
 .box {
-    width:  30%;
+    width:  15%;
     height: 150px;
     background-color: chartreuse;
     color:  white;
@@ -31,6 +32,16 @@ body {
     float: left;
     margin-right: 30px;
     margin-bottom: 30px;
+}
+
+#total {
+    padding: 20px;
+    text-align: center;
+    font-size: 40px;
+}
+
+#diamond, #tanzanite, #opal, #saphire {
+    margin: 10px;
 }
 
 
@@ -41,22 +52,16 @@ body {
 
 #wins, #losses {
     padding: 20px;
-    font-size: 20px;
+    font-size: 33px;
 }
 
 .crystals {
-    width: 100%;
-    clear: both;
-    
-}
-
-.number {
-    width: 30%;
-    height: 100px;
-    background-color: chartreuse;
-    font-size: 100px;
-    float: left;
+    width: 60%;
+    float: right;
     margin-top: 30px;
+    margin-right: 8%;
+  
+    
 }
 
 #score {
@@ -65,16 +70,3 @@ body {
     color: white;
 }
 
-.total {
-    width:  30%;
-    height: 59px;
-    background-color: chartreuse;
-    color:  white;
-    margin-top: 30px;
-    margin-bottom: 30px;
-    float: left;
-    margin-right: 30px;
-    padding: 20px;
-    font-size: 35px;
-    text-align: center;
-}
