@@ -10,29 +10,40 @@ var losses = 0;
 computerChoice = Math.floor((Math.random() * 140) + 30);
 $("#random").html(computerChoice);
 
-diamond = Math.floor((Math.random() * 10) + 1);
+diamond = Math.floor((Math.random() * 11) + 1);
 console.log(diamond + " :diamond");
 
-saphire = Math.floor((Math.random() * 10) + 1);
+saphire = Math.floor((Math.random() * 11) + 1);
 console.log(saphire + " :saphire");
 
-tanzanite = Math.floor((Math.random() * 10) + 1);
+tanzanite = Math.floor((Math.random() * 11) + 1);
 console.log(tanzanite + " :tanzanite");
 
-opal = Math.floor((Math.random() * 10) + 1);
+opal = Math.floor((Math.random() * 11) + 1);
 console.log(opal + " :opal");
 
 function scoreTest() {
     if (totalScore == computerChoice) {
         win ++;
-        alert("you win");
+        swal({
+            title: "You win!!!!",
+            text: "The Number was " + computerChoice,
+            icon: "success",
+            button: "High Five!!!",
+          });
         $("#wins").html("Wins: " + win);
-        reset();
+        setTimeout(reset, 7000);
     } else if (totalScore > computerChoice) {
+        var difference = totalScore - computerChoice;
         losses ++;
-        alert("you lose");
-        $("#losses").html("Losses: " + losses)
-        reset();
+        swal({
+            title: "You suck",
+            text: "You Went Over The Number By " + difference,
+            icon: "warning",
+            button: "Try Again :(",
+          });
+        $("#losses").html("Losses: " + losses);
+        setTimeout(reset, 7000);
     }
 }
 

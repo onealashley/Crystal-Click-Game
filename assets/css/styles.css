@@ -3,13 +3,15 @@ body {
 }
 
 .title {
-    width: 100%;
-    background-color: green;
+    background-image: url(./header-img.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
     font-size: 55px;
-    height: 54px;
+    height: 40px;
     text-align: center;
-    padding: 73px;
-    color: yellow;
+    padding: 24px;
+    color: #462a2a;
+    font-style: italic;
 }
 
 .instructions {
@@ -48,11 +50,13 @@ body {
 #random {
     padding: 20px;
     font-size: 100px;
+    text-align: center;
 }
 
 #wins, #losses {
     padding: 20px;
     font-size: 33px;
+    text-align: center;
 }
 
 .crystals {
@@ -68,5 +72,6 @@ body {
     font-size: 100px;
     text-align: center;
     color: white;
+    padding-top: 20px;
 }
 
