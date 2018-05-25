@@ -32,7 +32,7 @@ function scoreTest() {
             button: "High Five!!!",
           });
         $("#wins").html("Wins: " + win);
-        setTimeout(reset, 7000);
+        setTimeout(reset, 4000);
     } else if (totalScore > computerChoice) {
         var difference = totalScore - computerChoice;
         losses ++;
@@ -43,7 +43,7 @@ function scoreTest() {
             button: "Try Again :(",
           });
         $("#losses").html("Losses: " + losses);
-        setTimeout(reset, 7000);
+        setTimeout(reset, 4000);
     }
 }
 
