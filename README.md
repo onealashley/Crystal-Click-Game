@@ -4,4 +4,4 @@ This is a simple clicking game where each gem clicked has a random number assign
 
 Click too far and you will lose.
 
-play it at : https://onealashley.github.io/unit-4-game/
+play it at : https://onealashley.github.io/Crystal-Click-Game/
